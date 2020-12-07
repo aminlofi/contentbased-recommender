@@ -1,0 +1,20 @@
+Recommendation system model that I am trying to implement
+- Recommends list of products from respective skincare products descriptions (skin concerns) 
+  Lets say user A used an item that coherent with a unique skin type and its skin concerns 
+  Therefore, the system will recommend top related products with these features
+
+Procedures
+1. Web scrape data from sephora malaysia using selenium 
+   Among the data attributes scraped are product brand, name, skin_type, skin_concern and rating
+
+2. Data cleaning and preprocessing
+   - Drop duplicate data and data with missing field
+   - Remove RM to convert price to float
+
+Requirement
+1. Anaconda (Python 3)
+2. Jupyter Notebook - editor 
+3. Selenium & Geckodriver - driver to access web browser for web crawl data 
+4. Pandas 
+5. Regex - to store regular expressions like (%^>) into dataframe
+6. Sklearn - tfidfvectorizer, cosine similarity 
